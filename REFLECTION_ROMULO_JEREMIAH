@@ -1,0 +1,16 @@
+After completing the challenge, answer the following:
+
+1. Why did you use inheritance?
+I used inheritance because all the transport classes have common features that come from the `Vehicle` class. It helps reduce repeated code by sharing the same properties and methods. It also makes the program easier to organize and maintain.
+
+2. Why did you use interfaces?
+I used interfaces to give different vehicles specific abilities, such as driving, flying, or sailing. This makes the code more flexible because each class only implements the behaviors it needs. It also makes adding new transport types easier in the future.
+
+3. Could Helicopter inherit from both Vehicle and Airplane? Why or why not?
+No, a `Helicopter` cannot inherit from both `Vehicle` and `Airplane` because C# only allows one base class. This is called single inheritance. Instead, the `Helicopter` inherits from `Vehicle` and can implement multiple interfaces.
+
+4. Why can Helicopter implement both IFlyable and IDriveable?
+A `Helicopter` can implement both `IFlyable` and `IDriveable` because C# supports multiple interfaces. Interfaces describe what a class can do instead of what it is. This allows the helicopter to have both flying and driving behaviors.
+
+5. If a Submarine can both sail and dive, how would you design it?
+I would make the `Submarine` inherit from `Vehicle` because it is a type of vehicle. Then I would let it implement both `ISailable` and a new `IDiveable` interface. This design keeps the code organized while allowing the submarine to perform both actions.
